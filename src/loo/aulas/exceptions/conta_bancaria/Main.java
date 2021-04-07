@@ -5,7 +5,7 @@ import java.util.Calendar;
 public class Main {
     public static void main(String[] args) throws Exception {
         try {
-            ContaBancaria conta_corrente = new ContaBancaria("MATHEUS",1000);
+            ContaBancaria conta_corrente = new ContaBancaria("MATHEUS",-1000);
             ContaBancaria conta_bancaria = new ContaBancaria("ROCHA", 1200);
 
             conta_corrente.saca(1000);
