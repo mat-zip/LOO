@@ -17,7 +17,7 @@ public class Main {
 		}
 		System.out.println("Fim do main");*/
 
-		t.readFile("D:\\mathe\\Documents\\UTFPR\\4 - Periodo\\Linguagem-Orientada-a-Objetos\\loo-atividades\\src\\loo\\aulas\\exceptions\\aula\\teste.txt");
+		t.readFile("C:\\Users\\BTKProgramador\\IdeaProjects\\utfpr-loo-2020\\src\\loo\\aulas\\exceptions\\files\\teste.txt");
 	}
 
 	/**
