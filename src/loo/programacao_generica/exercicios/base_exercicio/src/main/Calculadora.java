@@ -10,9 +10,10 @@ import java.util.TreeSet;
 public class Calculadora<T> implements EspecificacaoCalculadora{
     @Override
     public ArrayList<? extends Pessoa> uniao(ArrayList<? extends Pessoa> arr1, ArrayList<? extends Pessoa> arr2) {
-        Collection<Pessoa> aux = new TreeSet<>(arr1);
+        Collection<Pessoa> aux = new ArrayList<Pessoa>(arr1);
         aux.addAll(arr2);
-        return arr1;
+        ArrayList<Pessoa> aux2 = new ArrayList<Pessoa>(aux);
+        return aux2;
     }
 
     @Override
