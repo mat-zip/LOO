@@ -10,33 +10,37 @@ import java.sql.SQLException;
 public class Main {
 
     public static void main(String[] args) {
-        SQLiteDatabase.getInstance().getConnection();
+        new MainController();
+
+//        SQLiteDatabase.getInstance().getConnection();
+//
+//
+//        Book b1 = new Book(1, "LOO");
+//
+//        try {
+//            Dao<Book, String> dao = DaoManager.createDao(
+//                    SQLiteDatabase.getInstance().getConnection(),
+//                    Book.class
+//            );
+//
+//            //dao.create( b1 );
+//            //dao.delete(b1);
+//            //dao.queryForAll();
+//
+//            //dao.update(b1);
+//
+//            for (Book l: dao.queryForAll()){
+//                System.out.println(l);
+//            }
+//
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//
+//
+//        SQLiteDatabase.getInstance().closeConnection();
 
 
-        Book b1 = new Book(1, "LOO");
-
-        try {
-            Dao<Book, String> dao = DaoManager.createDao(
-                    SQLiteDatabase.getInstance().getConnection(),
-                    Book.class
-            );
-
-            //dao.create( b1 );
-            //dao.delete(b1);
-            //dao.queryForAll();
-
-            //dao.update(b1);
-
-            for (Book l: dao.queryForAll()){
-                System.out.println(l);
-            }
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
-
-        SQLiteDatabase.getInstance().closeConnection();
 
     }
 }
